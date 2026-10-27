@@ -1,0 +1,113 @@
+.form-page {
+  flex: 1;
+}
+
+.form-page-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-page-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #1d4ed8;
+  font-weight: 600;
+  font-size: 0.92rem;
+  transition: all 0.15s ease;
+}
+
+.form-page-back:hover {
+  transform: translateX(-3px);
+  color: #1e3a8a;
+}
+
+.form-page-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.form-page-title {
+  font-family: var(--font-heading, 'Playfair Display', serif);
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.form-page-subtitle {
+  color: #64748b;
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+
+.form-page-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 2.25rem;
+  box-shadow: 0 4px 24px rgba(30, 58, 138, 0.06);
+  border: 1px solid rgba(29, 78, 216, 0.1);
+}
+
+.form-page-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1.5rem;
+  text-align: center;
+  gap: 1rem;
+  flex: 1;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(30, 58, 138, 0.05);
+}
+
+.form-page-state-emoji {
+  font-size: 3.5rem;
+  line-height: 1;
+}
+
+.form-page-state h2 {
+  font-family: var(--font-heading, 'Playfair Display', serif);
+  font-size: 1.6rem;
+  color: #0f172a;
+}
+
+.form-page-state p {
+  color: #64748b;
+  max-width: 320px;
+}
+
+.form-page-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #1d4ed8;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.92rem;
+  padding: 0.65rem 1.4rem;
+  border-radius: 9999px;
+  margin-top: 0.5rem;
+  transition: opacity 0.15s ease;
+}
+
+.form-page-back-btn:hover {
+  opacity: 0.9;
+  background-color: #1e3a8a;
+}
+
+@media (max-width: 640px) {
+  .form-page-inner {
+    padding: 1.5rem 1rem 3rem;
+  }
+
+  .form-page-card {
+    padding: 1.25rem 1rem;
+  }
+}

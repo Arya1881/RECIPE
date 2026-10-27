@@ -1,0 +1,74 @@
+.category-filter {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding: 0.35rem 0.2rem;
+  scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
+  align-items: center;
+}
+
+.category-filter::-webkit-scrollbar {
+  height: 4px;
+}
+
+.category-filter::-webkit-scrollbar-thumb {
+  background: rgba(29, 78, 216, 0.2);
+  border-radius: 9999px;
+}
+
+.category-filter-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0.45rem 0.95rem;
+  border-radius: 9999px;
+  font-size: 0.86rem;
+  font-weight: 600;
+  border: 1px solid rgba(29, 78, 216, 0.12);
+  background-color: #ffffff;
+  color: #0f172a;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.category-filter-pill:hover {
+  background-color: #eff6ff;
+  border-color: #3b82f6;
+  color: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+.category-filter-pill--active {
+  background-color: #1d4ed8;
+  color: #ffffff;
+  border-color: #1d4ed8;
+  box-shadow: 0 4px 12px rgba(29, 78, 216, 0.25);
+}
+
+.category-filter-pill--active:hover {
+  background-color: #1e3a8a;
+  border-color: #1e3a8a;
+  color: #ffffff;
+}
+
+.category-filter-emoji {
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+.category-filter-count {
+  font-size: 0.72rem;
+  padding: 0.12rem 0.45rem;
+  border-radius: 9999px;
+  background: rgba(29, 78, 216, 0.08);
+  color: #1d4ed8;
+  font-weight: 700;
+}
+
+.category-filter-count.count-active {
+  background: rgba(255, 255, 255, 0.24);
+  color: #ffffff;
+}
